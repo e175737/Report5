@@ -1,13 +1,18 @@
 package jp.ac.uryukyu.ie.e175737;
 
+/**
+ *  String name; //敵の名前
+ *  int hitPoint; //敵のHP
+ *  int attack; //敵の攻撃力
+ *  boolean dead; //敵の生死状態。true=死亡。
+ */
+
 public class LivingThing {
 
     private String name;
     private int hitPoint;
     private int attack;
     private boolean dead;
-
-
 
     /**
      * コンストラクタ。名前、最大HP、攻撃力を指定する。
@@ -29,34 +34,49 @@ public class LivingThing {
         return  dead;
     }
 
+    /**
+     * 生死状態のsetterメソッド。
+     */
     public void setDead(boolean dead) {
         this.dead = dead;
     }
 
+    /**
+     * 名前のgetterメソッド。
+     * @return ヒーローまたは敵の名前
+     */
     public String getName(){
         return name;
     }
 
+    /**
+     * 名前のsetterメソッド。
+     */
     public void setName(String name){
         this.name = name;
     }
 
+    /**
+     * HPのgetterメソッド。
+     * @return ヒーローまたは敵のHP
+     */
     public int getHitPoint(){
         return hitPoint;
     }
 
+    /**
+     * HPのsetterメソッド。
+     */
     public void setHitPoint(int hitPoint) {
         this.hitPoint = hitPoint;
     }
 
-    /*public int getAttack(){
-        return attack;
-    }*/
-
+    /**
+     * 攻撃力のsetterメソッド。
+     */
     public void setAttack(int attack) {
         this.attack = attack;
     }
-
 
 
     /**
